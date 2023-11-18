@@ -56,7 +56,7 @@ const CommentsForm = ({ slug }) => {
   };
 
   return (
-    <div className='bg-gray-100 shadow-lg rounded-lg p-8 pb-12 mb-8'>
+    <div className='bg-gray-100 shadow-lg rounded-lg p-8 pb-20 mb-8'>
       <h3 className='text-xl mb-8 font-semibold border-b pb-4'>Leave a Comment</h3>
       <div className='grid grid-cols-1 gap-4 mb-4'>
         <textarea 
@@ -103,7 +103,7 @@ const CommentsForm = ({ slug }) => {
           <label className='text-gray-500 cursor-pointer ml-2' htmlFor='storeData'>Save Name and Email</label>
         </div>
       </div>
-        {error && <p className='text-xs text-red-500'>All Fields are required</p>}
+        {error && <p className='text-xs pb-3 text-red-500'>All Fields are required</p>}
         <div>
             <button 
             type='button' 
@@ -113,7 +113,7 @@ const CommentsForm = ({ slug }) => {
             >
               Post Comment
             </button>
-            {showSuccessMessage && <span className='text-xl float-right font-semibold mt-3 text-green-600'>Comment Submitted for review</span>}
+            {showSuccessMessage && <span className='text-xl float-right overflow-hidden font-semibold mt-3 text-green-600'>Comment Submitted for review</span>}
         </div>
     </div>
   );
