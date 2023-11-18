@@ -1,5 +1,5 @@
-import '../styles/globals.scss'
-import 'tailwindcss/tailwind.css'
+import '../styles/globals.scss';
+import 'tailwindcss/tailwind.css';
 import React from 'react'
 import { Layout } from '../Components'
 
