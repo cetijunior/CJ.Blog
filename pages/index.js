@@ -6,10 +6,11 @@ import { getPosts } from '../services';
 import { FeaturedPosts } from '../sections';
 
 export default function Home({ posts }) {
+
   return (
     <div>
       <Head>
-        <title>Blog</title>
+        <title>CJ.Blog</title>
       </Head>
       <div className='container mx-auto px-10 mb-8'>
         <FeaturedPosts />
@@ -39,6 +40,3 @@ export async function getStaticProps() {
   };
 }
 
-
-
-// check for error fix mit services import 
